@@ -1,0 +1,16 @@
+
+
+  <tr  id="<%= dom_id employee %>">
+   <td> <%= employee.first_name %></td>
+   <td> <%= employee.last_name %></td>
+   <td> <%= employee.email %> </td>
+   <td> <%= employee.phone %></td>
+   <td> <%= employee.linkedln %></td>
+   <td> <%= link_to "Show", employee, class:"btn btn-success" %></td>
+   <%
+=begin%>
+ <td><%= link_to "Edit ", employee , class:"btn btn-warning"%></td>
+   <td>  <%= button_to "Destroy ", employee, method: :delete, class:"btn btn-danger" %></td> 
+<%
+=end%>
+  </tr>
